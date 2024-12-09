@@ -78,7 +78,7 @@ public class teste {
             do {
                 System.out.println("\n===== DASHBOARD =====\n");
                 System.out.println("Bem vindo, " + user_atual.getNome_usuario() + "!");
-                System.out.println("Escolha uma opção:\n0 - Logout\n1 - Cadastrar novo cliente\n2 - Adicionar pet a um cliente existente\n3 - Cadastrar um atendimento\n4 - Cadastrar serviços\n5 - Atender Consulta");
+                System.out.println("Escolha uma opção:\n0 - Logout\n1 - Cadastrar novo cliente\n2 - Adicionar pet a um cliente existente\n3 - Cadastrar um atendimento\n4 - Cadastrar serviços\n5 - Atender Consulta\n6 - Buscar Cliente");
                 menu = ler.nextInt();
                 char continuar;
                 int id_cliente;
@@ -182,6 +182,14 @@ public class teste {
 
                         } else System.out.println("Desculpe, essa área só pode ser acessada por Médicos Veterinários.");
                         break;
+                    case 6:
+                        if (clientes.isEmpty()) {
+                            System.out.println("ainda não há clientes cadastrados");
+                        } else {
+                            System.out.println("qual cliente você deseja buscar?");
+                            String nomeBusca = ler2.nextLine();
+                            BuscaBinaria.buscarPeloNome(clientes, nomeBusca);
+                        }
                 }
 
             } while (menu != 0);
