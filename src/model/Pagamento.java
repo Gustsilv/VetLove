@@ -24,7 +24,6 @@ public class Pagamento {
         System.out.println("insira o valor pago: ");
         Scanner ler = new Scanner(System.in);
         this.valor = ler.nextDouble();
-        ler.close();
     }
 
     public void pagar(double valor_cobrado){
@@ -73,7 +72,6 @@ public class Pagamento {
                     opcao = ler.nextInt();
                 }while (opcao < 1 || opcao > 4);
         }
-        ler.close();
     }
 
     private void cadastrar_cartao(){

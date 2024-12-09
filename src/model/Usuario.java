@@ -2,11 +2,6 @@ package model;
 
 import java.util.ArrayList;
 
-import model.atendimento.Atendimento;
-import model.atendimento.Consulta;
-import model.atendimento.Servico;
-import model.atendimento.TipoServico;
-
 public class Usuario {
     private static int contadorUsuario = 0;
     private String nome_usuario;

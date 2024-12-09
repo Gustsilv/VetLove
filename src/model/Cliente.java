@@ -122,7 +122,6 @@ public class Cliente {
 
         System.out.println("Insira o endereço: ");
         this.setEndereco(ler.nextLine());
-        ler.close();
         return this;
     }
 
@@ -164,8 +163,6 @@ public class Cliente {
         animal.setData_nascimento_animal(ler.nextLine());
 
         animais.add(animal);
-        ler.close();
-        lerchar.close();
     }
 
     public void exibe_pets(){
@@ -185,7 +182,6 @@ public class Cliente {
         System.out.println("Qual animal pet você deseja remover?");
         indice = ler.nextInt();
         animais.remove(indice-1);
-        ler.close();
     }
 
     public boolean tem_pets(){

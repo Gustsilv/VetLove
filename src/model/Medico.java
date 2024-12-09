@@ -2,8 +2,6 @@ package model;
 
 import java.util.Scanner;
 
-import model.Usuario;
-
 public class Medico extends Usuario{
     private static int contadorMedicos = 0;
     private int id_medico;
@@ -63,7 +61,6 @@ public class Medico extends Usuario{
 
         System.out.println("Insira o telefone: ");
         this.setTelefone(ler.nextLine());
-        ler.close();
         return this;
     }
 }

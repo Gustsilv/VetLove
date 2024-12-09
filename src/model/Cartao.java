@@ -50,8 +50,6 @@ public class Cartao {
             System.out.println("o CVV deve ter apenas 3 caracteres!\n insira novamente: ");
             this.cvv = ler.nextLine();
         }
-        ler.close();
-        digitos.close();
     }
 
     public String imprimir_cartao() {

@@ -1,9 +1,5 @@
 package view;
 import model.*;
-import model.atendimento.Atendimento;
-import model.atendimento.Medico;
-import model.atendimento.TipoServico;
-import model.cliente.Cliente;
 
 import java.util.ArrayList;
 import java.util.Scanner;
