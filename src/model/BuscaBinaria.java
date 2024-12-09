@@ -33,19 +33,13 @@ public class BuscaBinaria {
         return -1;
     }
 
-    public static void ordenarLista(ArrayList<Cliente> lista){
+    public static void ordenarListaPeloNome(ArrayList<Cliente> lista){
         lista.sort(Comparator.comparing(Cliente::getNome_cliente));
     }
 
     public static void buscarPeloNome(ArrayList<Cliente> cadastro, String nome_procurado) {
 
-        ordenarLista(cadastro);
-
-        // Exibindo a lista ordenada
-        System.out.println("Lista ordenada:");
-        for (Cliente nome_cliente : cadastro) {
-            System.out.println(nome_cliente.getNome_cliente());
-        }
+        ordenarListaPeloNome(cadastro);
 
         // Chamando a função de busca binária
         int resultado = buscaBinaria(cadastro, nome_procurado);
@@ -54,8 +48,6 @@ public class BuscaBinaria {
         if (resultado != -1) {
             System.out.println("O cliente \"" + nome_procurado + "\" foi encontrado: ");
             System.out.println(cadastro.get(resultado).exibir());
-
-            System.out.println("pets do cliente: ");
             cadastro.get(resultado).exibe_pets();
         } else {
             System.out.println("O cliente \"" + nome_procurado + "\" não foi encontrado.");
