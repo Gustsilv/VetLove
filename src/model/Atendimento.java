@@ -49,7 +49,6 @@ public class Atendimento {
         }while(valor_cobrado > 0);
         System.out.println("Status do atendimento: Pago!");
         status_atendimento = "pago";
-        ler.close();
     }
 
     public int getId_atendimento() {

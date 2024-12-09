@@ -39,26 +39,25 @@ public class Funcao {
 
     // metodos
     public void adicionar_usuario(){
-        Scanner ler = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         Usuario usuario = new Usuario();
 
         System.out.println("\n========= cadastrar usuário =========");
 
         System.out.println("Insira o nome do(a) " + descricao_funcao + ": ");
-        usuario.setNome_usuario(ler.nextLine());
+        usuario.setNome_usuario(input.nextLine());
 
         System.out.println("Insira o login: ");
-        usuario.setLogin(ler.nextLine());
+        usuario.setLogin(input.nextLine());
 
         System.out.println("Insira a senha: ");
-        usuario.setSenha(ler.nextLine());
+        usuario.setSenha(input.nextLine());
 
         usuario.setId_funcao(id_funcao);
 
         usuario.setCargo(descricao_funcao);
 
         usuarios.add(usuario);
-        ler.close();
     }
 
     public void imprimir_usuarios(){

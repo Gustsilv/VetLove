@@ -73,7 +73,6 @@ public class TipoServico {
             leia.nextLine();
             cadastrarTipoDeServico();
         }
-        leia.close();
         return this;
     }
 

@@ -61,7 +61,6 @@ public class Medico extends Usuario{
 
         System.out.println("Insira o telefone: ");
         this.setTelefone(ler.nextLine());
-        ler.close();
         return this;
     }
 }
