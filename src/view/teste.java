@@ -108,7 +108,7 @@ public class teste {
                             System.out.println("selecione a id do cliente que deseja adicionar o pet: ");
                             id_cliente = ler.nextInt();
                             do {
-                                clientes.get(id_cliente).adicionar_animal();
+                                clientes.get(id_cliente-1).adicionar_animal();
                                 System.out.println("\n === deseja cadastrar outro pet? (s/n)");
                                 continuar = ler.next().charAt(0);
                             } while (continuar == 's' || continuar == 'S');
